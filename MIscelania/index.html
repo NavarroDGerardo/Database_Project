@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>home</title>
+		<link rel="stylesheet" href="css/index.css">
+		<script src="js/jquery-1.12.1.min.js"></script>
+        <script src="js/store.min.js"></script>
+	</head>
+	<body>
+		<div class="Wrapper">
+			<header>
+				<ul>
+					<li id="nombreTienda"> EL PARQUE </li>
+				</ul>
+			</header>
+			<div id="login"></div>
+			<div class="logInfo">
+				<h2 id="log-in">Log in</h2>
+				<br>
+				<p class="userInfo">Username</p>
+				<br><br>
+				<input type="text" name="username" class="info">
+				<br><br><br>
+				<p class="userInfo">Password</p>
+				<br><br>
+				<input type="password" name="password" class="info">
+				<br><br><br>
+				<input type="submit" value="log in" class="button">
+				<br><br>
+				<p class="signUp">SIGN UP</p>
+			</div>
+		
+			<div></div>
+				<img src="img/parque.jpeg" id="parkImg">
+			</div>
+		</div>
+
+		<script>
+			$('.button').on('click', function(){
+				window.location.href = "options.html"
+			});
+			$('.signUp').on('click', function(){
+				window.location.href = "sign_up.html"
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,120 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.Wrapper{
+    height: 150px;
+    width: 100%;
+}
+header{
+    height: 45px;
+    width: 100%;
+    background-color: #466E6E;
+}
+
+.mainBar {
+    float: left;
+    list-style: none;
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 12%;
+    color: white;
+}
+.zelda{
+    color: white;
+    /*text-decoration: none;*/
+    background-color: transparent;
+}
+
+#nombreTienda{
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 30px;
+    list-style: none;
+    margin-left: 6%;
+    padding-top: 5px;
+    color: white;
+}
+
+#parkImg{
+    width: 100%
+}
+
+#login{
+    width: 500px;
+    height: 600px;
+    background-color: #000;
+    position: absolute;;
+    top: 20%;
+    left: 65%;
+    opacity: 0.5;
+}
+
+.logInfo{
+    width: 450px;
+    height: 600px;
+    position: absolute;;
+    top: 21%;
+    left: 66%;
+}
+
+#log-in{
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.info{
+    width: 100%;
+    height: 25px;
+}
+
+.userInfo{
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.button{
+    width: 50%;
+    height: 25px;
+    margin: 30px 25%;
+    border-radius: 12px;
+    background-color: #365555;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.signUp{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+}

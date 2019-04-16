@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>main</title>
+		<link rel="stylesheet" type="text/css" href="css/options.css">
+		<script src="js/jquery-1.12.1.min.js"></script>
+        <script src="js/store.min.js"></script>
+        <script type="text/javascript" src="js/options.js"></script>
+	</head>
+	<body>
+		<nav>
+			<div id="storeName">
+				<p id="name">EL PARQUE</p>
+			</div>
+			<div class="options" data-option="#registrar" id="registrar" data-page="#Regis">
+				<p class="pOptions">
+					Registrar
+				</p>
+			</div>
+			<div class="options" data-option="#devoluciones" id="devoluciones" data-page="#Devo">
+				<p class="pOptions">
+					Devoluciones
+				</p>
+			</div>
+			<div class="options" data-option="#transaccones" id="transaccones" data-page="#Tran">
+				<p class="pOptions">
+					Transacciones
+				</p>
+			</div>
+			<div class="options active" data-option="#inventario" id="inventario" data-page="#inven">
+				<p class="pOptions">
+					Inventario
+				</p>
+			</div>
+
+			<div class="logOut">
+				<p class="pOptions">
+					Log out
+				</p>
+			</div>
+		</nav>
+
+		<div class="content" id="inven">
+			<div class="inventario">
+				<h1 class="Tittle">Inventario</h1>
+				<p class="type">Tipo</p>
+				<select class="selection">
+				  	<option value="volvo">Volvo</option>
+				  	<option value="saab">Saab</option>
+				  	<option value="mercedes">Mercedes</option>
+				  	<option value="audi">Audi</option>
+				</select>
+				<p class="type">Marca</p>
+				<select class="selection">
+				  	<option value="volvo">Volvo</option>
+				  	<option value="saab">Saab</option>
+				  	<option value="mercedes">Mercedes</option>
+				  	<option value="audi">Audi</option>
+				</select>
+				<p class="type">Precio</p>
+				<select class="selection">
+				  	<option value="volvo">Volvo</option>
+				  	<option value="saab">Saab</option>
+				  	<option value="mercedes">Mercedes</option>
+				  	<option value="audi">Audi</option>
+				</select>
+				<p class="type">Random</p>
+				<select class="selection">
+				  	<option value="volvo">Volvo</option>
+				  	<option value="saab">Saab</option>
+				  	<option value="mercedes">Mercedes</option>
+				  	<option value="audi">Audi</option>
+				</select>
+				<input type="submit" value="filtrar" class="filtrar">
+			</div>
+			<div class="inventDisp">
+					<!--Tengo dudaas con esto, tenemos que ver como podemos desplegar esta información-->
+			</div>
+		</div>
+
+		<div class="content" id="Tran">
+			<div class="transacctionDisplay">
+				<h2 class="tittleOption">Transacciones</h2>
+
+				<table>
+					<tr>
+						<td><p class="infoName">ID:</p></td>
+						<td><input type="text" value="" class="id_field"></td>
+						<td><button id="buscar">buscar</button></td>
+					</tr>
+
+					<tr>
+						<td><p class="infoName">Nombre:</p></td>
+						<td><input type="text" readonly class="infoDisplay" value=""></td>
+
+						<td><p class="infoName">Marca:</p></td>
+						<td><input type="text" readonly class="infoDisplay" value=""></td>
+					</tr>
+
+					<tr>
+						<td><p class="infoName">Cantidad:</p></td>
+						<td><input type="text" readonly class="infoDisplay" value=""></td>
+
+						<td><p class="infoName">Precio:</p></td>
+						<td><input type="text" readonly class="infoDisplay" value=""></td>
+					</tr>
+
+					<tr>
+						<td><p class="infoName">Proveedor:</p></td>
+						<td><input type="text" readonly class="infoDisplay" value=""></td>
+					</tr>
+				</table>
+				<br>
+				<table>
+					<tr>
+						<td><button class="Compra">aniadir producto</button></td>
+						<td><h3 id="totalText">Total:</h3></td>
+					</tr>
+					<tr>
+						<td><button class="Comprar" id=""></button></td>
+						<td><input type="text" readonly class="TotalDisplay" value=""></td>
+					</tr>
+					<tr>
+						<td><button class="Compra" id="cancelar">Cancelar</button></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<div class="content" id="Devo">
+			<h2 class="tittleOption">Devoluciones</h2>
+			<table>
+				<tr>
+					<td><p class="infoName">Producto ID:</p></td>
+					<td><input type="text" name="" class="id_field"></td>
+				</tr>
+				<tr>
+					<td><p class="infoName">Razon de devolucion</td>
+					<td>
+						<select>
+							<option value="none">-none-</option>
+                            <option value="BS">Mal estado</option>
+                            <option value="PC">Producto caducado</option>
+                            <option value="NWE">No es lo que pedí</option>
+                        </select>
+                    </td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="content" id="Regis">
+			<h2 class="tittleOption">Registar</h2>
+			<table>
+				<tr>
+					<td><p class="regisTags">ID:</p></td>
+					<td><input type="text" readonly value="" class="id_field"></td>
+				</tr>
+
+				<tr>
+					<td><p class="regisTags">Nombre:</p></td>
+					<td><input type="text" class="registarInput" value=""></td>
+
+					<td><p class="regisTags">Marca:</p></td>
+					<td><input type="text" class="registarInput" value=""></td>
+				</tr>
+
+				<tr>
+					<td><p class="regisTags">Cantidad:</p></td>
+					<td><input type="text" class="registarInput" value=""></td>
+					<td><p class="regisTags">Precio:</p></td>
+					<td><input type="text" class="registarInput" value=""></td>
+				</tr>
+				<tr>
+					<td><p class="regisTags">Email proveedor:</p></td>
+					<td><input type="text" class="registarInput" value=""></td>
+					<td><p class="regisTags">Proveedor:</p></td>
+					<td><input type="email" class="registarInput" value=""></td>
+				</tr>
+			</table>
+
+			<button id="registerProduct">Registar</button>
+		</div>
+
+		<script>
+			var data = null;
+			var page = '#inven';
+			$('.options').on('click', function(){
+				$('.options').removeClass("active");
+				data = $(this).data("option");
+				$(data).addClass("active");
+
+				//console.log($(this).data('page'));
+				$(page).hide();
+				page = $(this).data('page');
+				$(page).fadeIn();
+			});
+
+			$('.logOut').on('click', function(){
+				window.location.href = "index.html"
+			});
+		</script>
+	</body>
+</html>
